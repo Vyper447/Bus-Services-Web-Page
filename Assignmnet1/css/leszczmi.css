@@ -1,0 +1,144 @@
+#Header {
+    color: rgb(38, 83, 230);
+    text-align: center;
+}
+
+#Footer {
+    color: rgb(38, 83, 230);
+    text-align: center;
+}
+
+#Dropdowns {
+    display: inline-block;
+    vertical-align: top;
+    color: rgb(38, 83, 230);
+}
+
+#CityNames {
+    font-size: 20px;
+}
+
+#CityNames2 {
+  font-size: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(240, 192, 35, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .grid-item-2-columns {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(240, 192, 35, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    grid-column: span 2;
+  }
+
+  #ButtonCalculate  {
+    margin-right: 50px;
+    font-size: 30px;
+    background-color: GoldenRod;
+  }
+
+  #ButtonReceipt {
+    margin-right: 50px;
+    font-size: 30px;
+    background-color: GoldenRod;
+  }
+
+  #ButtonSubmit {
+    margin-right: 50px;
+    font-size: 30px;
+    background-color: GoldenRod;
+  }
+
+  #Button12  {
+    margin-right: 50px;
+    font-size: 30px;
+    background-color: GoldenRod;
+  }
+
+  #Button2  {
+    margin-right: 50px;
+    font-size: 30px;
+    background-color: GoldenRod;
+  }
+
+  #Button4  {
+    margin-right: 50px;
+    font-size: 30px;
+    background-color: GoldenRod;
+  }
+
+  #Button8  {
+    margin-right: 50px;
+    font-size: 30px;
+    background-color: GoldenRod;
+  }
+
+  #fname {
+    width: 500px;
+  }
+
+  #lname {
+    width: 500px;
+  }
+
+  #eaddress {
+    width: 500px;
+  }
+
+  #age {
+    width: 500px;
+  }
+
+  #totalammount {
+    width: 500px;
+  }
+
+  .side-by-side {
+    color: rgb(38, 83, 230);
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  #GLabel {
+    font-size: 30px;
+    
+  }
+
+  hr {
+   color: rgba(240, 192, 35, 0.8);
+   background-color: rgba(240, 192, 35, 0.8);
+   height: 12px;
+  }
+
+  p {
+    color: rgb(38, 83, 230);
+  }
+
+  h3 {
+    color: rgb(38, 83, 230);
+  }
+
+  .center {
+    color: rgb(38, 83, 230);
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+  }
+
+  

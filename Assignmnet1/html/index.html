@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../scripts/leszczmi.js "></script>
+    <link rel="stylesheet" href="../css/leszczmi.css">
+
+    <style>
+
+    </style>
+
+  </head>
+  <body>
+    <!--Title and header of the website-->
+    <title>Assignment 1 / leszczmi / 991633457</title>
+    <h1 id="Header"><u>2023 Assignmnet #1, Michael Leszczynski, Canada</u></h1>
+    <hr>
+
+    
+  <!--Dropdown for the Departure City Name-->
+  <div class="grid-container">
+    <div class="grid-item">
+
+        <form id="Dropdowns">
+          <label for="DeptCityName"><u>Departure City Name:</u></label>
+          <select name="DeptCityName" id="CityNames">
+            <option value="Mississauaga">Mississauaga</option>
+            <option value="Brampton">Brampton</option>
+            <option value="Oakville">Oakville</option>
+            <option value="Toronto">Toronto</option>
+          </select>
+          <br><br>
+    </form>
+    </div>
+    
+    <!--Dropdown for the Destination City Name-->
+    <div class="grid-item">
+        <form id="Dropdowns">
+      <label for="DestCity"><u>Destination City Name:</u></label>
+          <select name="DestCity" id="CityNames2">
+            <option value="Guelph">Guelph</option>
+            <option value="Cambridge">Cambridge</option>
+            <option value="Milton">Milton</option>
+            <option value="London">London</option>
+          </select>
+          <br><br>
+      </form>
+    </div>
+
+    <!--Radio Buttons for the bus services-->
+    <div class="grid-item-2-columns ">
+      <form id="Dropdowns">
+      <p><u>Bus Services:</u></p>
+        <input type="radio" id="Megabus" name="bus_services" value="MEGABUS">
+        <label for="Megabus">Megabus</label><br>
+        <input type="radio" id="Minibus" name="bus_services" value="MNIBUS">
+        <label for="Minibus">Minibus</label><br>
+        <input type="radio" id="Coachbus" name="bus_services" value="COACHBUS">
+        <label for="Coachbus">Coachbus</label><br>
+        <input type="radio" id="Trolleybus" name="bus_services" value="TROLLEYBUS">
+        <label for="Trolleybus">Trolleybus</label>
+      <br><br>
+    
+      <!--Date of Travel date input type-->
+      <label for="DateOfTravel"><u>Date of Travel:</u></label>
+      <input type="date" id="DateOfTravel" name="DateOfTravel">
+      <br><br>
+    
+    <!--Ticket Number with increment and decrement options-->
+    <label for="TicketNumber"><u>Number of Tickets:</u></label>  
+    <input id=TicketNumber type=text readonly>
+    <button type="button" onclick="addTicket()">+</button>
+    <button type="button" onclick="subtractTicket()">-</button>
+
+    </form>
+    </div>  
+    
+    <!--Buttons to for the use to select at ime-->
+      <div class="grid-item-2-columns">
+        <form id="Dropdowns">
+      <label for="ShowTimeButtons"><u>Bus Times:</u></label>
+      <p>Double click a time to choose it!</p>
+      <br>
+      <button class="button1" id="Button12" type="button" value="12:30PM" onclick="colorchange()">12:30PM</button>
+      <button class="button2" id="Button2" type="button" value="2:00PM" onclick="colorchange2()">2:00PM</button>
+      <button class="button3" id="Button4" type="button" value="4:00PM" onclick="colorchange3()">4:00PM</button>
+      <button class="button4" id="Button8" type="button" value="8:00PM" onclick="colorchange4()">8:00PM</button>
+    </form>
+
+        
+    </div>
+    <div class="grid-item-2-columns">
+      
+      <!--First name and last name text feilds-->
+        <div class="side-by-side">
+      <label for="fname"><u>First name:</u></label><br>
+      <input type="text" id="fname" name="fname"><br>
+        </div>
+
+      <div class="side-by-side">
+      <label for="lname"><u>Last name:</u></label><br>
+      <input type="text" id="lname" name="lname"><br>
+        </div>
+
+    </div>
+    <div class="grid-item-2-columns">
+
+      <!--Email Address Text feild-->
+      <div class="side-by-side">
+        <label for="EAddress"><u>Email Address:</u></label><br>
+        <input type="text" id="eaddress" name="EAddress"><br>
+      </div>
+
+      <!--Radio button for selection of gender-->
+      <div class="side-by-side">
+      <p><u>Gender:</u></p>
+          <input type="radio" id="Male" name="gender" value="MALE">
+          <label id="GLabel" for="Male">Male</label>
+          <input type="radio" id="Female" name="gender" value="FEMALE">
+          <label id="GLabel" for="Female">Female</label>
+         <input type="radio" id="Other" name="gender" value="OTHER">
+          <label id="GLabel" for="Other">Other</label>
+      </div>
+
+      <!--Text feild for age-->
+      <div class="side-by-side">
+        <label for="Age"><u>Age:</u></label><br>
+        <input type="text" id="age" name="Age"><br>
+      </div>
+
+
+    </div>  
+    <div class="grid-item-2-columns">
+
+      <!--Total amount that the user has to pay for their transaction-->
+      <div class="side-by-side">
+        <label for="TotalAmount"><u>Total Amount:</u></label><br>
+        <input type="text" id="totalammount" name="TotalAmount"><br>
+      </div>
+
+
+
+    </div>
+
+    <!--Buttons for calculating the amount the user owes and button to submit the form and view their receipt-->
+    <div class="grid-item-2-columns">
+      <button id="ButtonCalculate" type="button" onclick="calculate()">Calculate</button>
+    <a href="../html/secondpage.html">
+      <button id="ButtonSubmit" type="button" onclick="myFunction()" disabled>Submit</button>
+    </a>
+
+    </div> 
+  </div>
+    <hr>
+
+    <!--Footer-->
+    <h1 id="Footer"><u>My Login: leszczmi / My ID: 991633457 / My Program: Assignment 1</u></h1>
+    
+  </body>
+</html>
